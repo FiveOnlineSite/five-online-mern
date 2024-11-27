@@ -2,16 +2,16 @@ import React from "react";
 import AdminLayout from "../../components/AdminLayout";
 import { NavLink } from "react-router-dom";
 
-const BlogCategory = () => {
+const Testimonials = () => {
   return (
     <div>
       <AdminLayout>
         <div className="pages-headers ">
           <h2>
-            Blog Category
-            <NavLink to="/blog-category/add" className="theme-cta">
+            Testimonials
+            <NavLink to="/testimonials/add" className="theme-cta">
               <i class="las la-plus-circle"></i>
-              Add Blog Category
+              Add Testimonial
             </NavLink>
           </h2>
         </div>
@@ -22,16 +22,24 @@ const BlogCategory = () => {
                 <table id="example" className="table nowrap">
                   <thead>
                     <tr>
-                      <th>Category</th>
+                      <th>Name</th>
+                      <th className="text-center">Company</th>
+                      <th className="text-center">Desgination</th>
+                      <th className="text-center">Review</th>
+                      <th className="text-center">Image</th>
                       <th className="text-center">Edit</th>
                       <th className="text-center">Delete</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Category1</td>
+                      <td>Test</td>
+                      <td className="text-center">Test</td>
+                      <td className="text-center">Test</td>
+                      <td className="text-center">Test</td>
+                      <td className="text-center">Test</td>
                       <td className="text-center">
-                        <NavLink to={`/blog-category/edit`} title="Edit">
+                        <NavLink to={`/testimonials/edit`} title="Edit">
                           <i class="las la-pencil-alt"></i>
                         </NavLink>
                       </td>
@@ -52,4 +60,4 @@ const BlogCategory = () => {
   );
 };
 
-export default BlogCategory;
+export default Testimonials;

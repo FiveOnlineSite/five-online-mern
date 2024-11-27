@@ -56,6 +56,12 @@ const AdminSidebar = () => {
               <span className="las la-user"></span> <span>User Creation</span>
             </NavLink>
           </li>
+
+          <li>
+            <NavLink to="/testimonials" title="Testimonials">
+              <span className="las la-star"></span> <span>Testimonials</span>
+            </NavLink>
+          </li>
         </ul>
       </div>
     </>

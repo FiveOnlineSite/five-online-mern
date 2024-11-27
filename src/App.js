@@ -11,6 +11,9 @@ import BlogCategory from "./admin/BlogCategory/BlogCategory";
 import AddBlogCategory from "./admin/BlogCategory/AddBlogCategory";
 import EditBlogCategory from "./admin/BlogCategory/EditBlogCategory";
 import Login from "./admin/Login";
+import Testimonials from "./admin/Testimonials/Testimonials";
+import AddTestimonial from "./admin/Testimonials/AddTestimonial";
+import EditTestimonial from "./admin/Testimonials/EditTestimonial";
 
 function App() {
   return (
@@ -29,6 +32,9 @@ function App() {
           <Route path={"/blog-category"} element={<BlogCategory />} />
           <Route path={"/blog-category/add"} element={<AddBlogCategory />} />
           <Route path={"/blog-category/edit"} element={<EditBlogCategory />} />
+          <Route path={"/testimonials"} element={<Testimonials />} />
+          <Route path={"/testimonials/add"} element={<AddTestimonial />} />
+          <Route path={"/testimonials/edit"} element={<EditTestimonial />} />
         </Routes>
       </Router>
     </div>

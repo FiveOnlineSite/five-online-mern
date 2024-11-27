@@ -615,6 +615,10 @@ embed {
   color: var(--theme-color-prime);
 }
 
+.theme-cta.ms-2.trash-btn {
+  width: 50px;
+  height: 45px;
+}
 @media only screen and (max-width: 1200px) {
   .sidebar {
     width: 70px;
