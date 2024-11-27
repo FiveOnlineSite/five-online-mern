@@ -8,7 +8,7 @@ const AdminSidebar = () => {
         <NavLink to="/">
           <img
             className="admin-logo"
-            src="/images/fiveonline-white-logo.png"
+            src="/images/black-logo.png"
             alt="Logo"
             loading="lazy"
           />
@@ -16,16 +16,44 @@ const AdminSidebar = () => {
       </div>
       <div className="sidebar-menu">
         <ul>
-          <li>
-            <NavLink to="/blog" title="Services">
-              <span className="las la-hands-helping"></span> <span>Blog</span>
-            </NavLink>
+          <li class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <span className="las la-blog blog-icon"></span>
+                  <span>Blog</span>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <NavLink to="/blog-creation">
+                    <span className="las la-blog blog-icon"></span>
+                    <span>Create Blog</span>
+                  </NavLink>
+
+                  <NavLink to="/blog-category">
+                    <span className="las la-blog blog-icon"></span>
+                    <span> Blog Category</span>
+                  </NavLink>
+                </div>
+              </div>
+            </div>
           </li>
 
           <li>
             <NavLink to="/user-creation" title="Gallery">
-              <span className="las la-photo-video"></span>{" "}
-              <span>User Creation</span>
+              <span className="las la-user"></span> <span>User Creation</span>
             </NavLink>
           </li>
         </ul>

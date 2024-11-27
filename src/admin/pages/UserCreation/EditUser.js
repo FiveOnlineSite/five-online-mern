@@ -1,12 +1,12 @@
 import React from "react";
 import AdminLayout from "../../../components/AdminLayout";
 
-const AddUser = () => {
+const EditUser = () => {
   return (
     <div>
       <AdminLayout>
         <div className="theme-form-header">
-          <h2>Add User</h2>
+          <h2>Edit User</h2>
         </div>
         <div className="form-white-bg">
           <form>
@@ -47,4 +47,4 @@ const AddUser = () => {
   );
 };
 
-export default AddUser;
+export default EditUser;

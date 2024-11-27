@@ -8,7 +8,7 @@ const UserCreation = () => {
       <div className="pages-headers ">
         <h2>
           User
-          <NavLink to="/" className="theme-cta">
+          <NavLink to="/user-creation/add" className="theme-cta">
             <i class="las la-plus-circle"></i>
             Create User
           </NavLink>
@@ -24,9 +24,27 @@ const UserCreation = () => {
                     <th>Name</th>
                     <th className="text-center">Email Id</th>
                     <th className="text-center">Password</th>
+                    <th className="text-center">Edit</th>
+                    <th className="text-center">Delete</th>
                   </tr>
                 </thead>
-                <tbody></tbody>
+                <tbody>
+                  <tr>
+                    <td>Test</td>
+                    <td className="text-center">test@gmail.com</td>
+                    <td className="text-center">Test</td>
+                    <td className="text-center">
+                      <NavLink to={`/user-creation/edit`} title="Edit">
+                        <i class="las la-pencil-alt"></i>
+                      </NavLink>
+                    </td>
+                    <td className="text-center">
+                      <button className="delete-btn">
+                        <i class="las la-trash"></i>{" "}
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>
