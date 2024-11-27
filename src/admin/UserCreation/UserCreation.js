@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import AdminLayout from "../../../components/AdminLayout";
+import AdminLayout from "../../components/AdminLayout";
 import { NavLink } from "react-router-dom";
 
 const UserCreation = () => {

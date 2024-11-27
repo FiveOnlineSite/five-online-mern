@@ -1,16 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Dashboard from "./admin/pages/Dashboard";
-import Blog from "./admin/pages/Blog/Blog";
-import UserCreation from "./admin/pages/UserCreation/UserCreation";
-import AddUser from "./admin/pages/UserCreation/AddUser";
-import EditUser from "./admin/pages/UserCreation/EditUser";
-import BlogCreation from "./admin/pages/BlogCreation/BlogCreation";
-import AddBlog from "./admin/pages/BlogCreation/AddBlog";
-import EditBlog from "./admin/pages/BlogCreation/EditBlog";
-import BlogCategory from "./admin/pages/BlogCategory/BlogCategory";
-import AddBlogCategory from "./admin/pages/BlogCategory/AddBlogCategory";
-import EditBlogCategory from "./admin/pages/BlogCategory/EditBlogCategory";
-import Login from "./admin/pages/Login";
+import Dashboard from "./admin/Dashboard";
+import Blog from "./admin/Blog/Blog";
+import UserCreation from "./admin/UserCreation/UserCreation";
+import AddUser from "./admin/UserCreation/AddUser";
+import EditUser from "./admin/UserCreation/EditUser";
+import BlogCreation from "./admin/BlogCreation/BlogCreation";
+import AddBlog from "./admin/BlogCreation/AddBlog";
+import EditBlog from "./admin/BlogCreation/EditBlog";
+import BlogCategory from "./admin/BlogCategory/BlogCategory";
+import AddBlogCategory from "./admin/BlogCategory/AddBlogCategory";
+import EditBlogCategory from "./admin/BlogCategory/EditBlogCategory";
+import Login from "./admin/Login";
 
 function App() {
   return (
